@@ -31,6 +31,7 @@
 } 
 .span-class{
      color: #00b5ea ;
+     transition: all  0.2s  20ms ease-out;
   
 } 
 .logo-size{
@@ -100,8 +101,18 @@
     font-size: 2rem;
     color: var(--white-color);
     font-family: 'Roboto';
+    transition: all  0.23s  20ms ease-out;
    
 }
+.h1-class:hover{
+    font-size: 2.400rem;
+    color: var(--main-color);
+}
+.h1-class:hover .span-class{
+    color: var(--white-color);
+    font-size: 2.400rem;
+}
+
 
 .ul-class{
     display: flex;
@@ -118,6 +129,30 @@
     font-size: 1.1875rem;
     font-family: 'Roboto';
 }
+.a-li-class {
+    position: relative;
+ }
+  
+.a-li-class::after {
+    content: '';
+    position: absolute;
+    width: 55%;
+    transform: scaleX(0); 
+    height: 1px;
+    bottom: 0;
+    left: 59px;
+    /* margin-top: 3px; */
+    background-color: var(--main-color);
+    /* transform-origin: left;    */
+    transition: transform  0.80s 19ms ease-out;
+  }
+  
+.a-li-class:hover::after {
+    transform: scaleX(1);  
+    /* transform-origin: bottom right;   */
+}
+
+
 
 /* seecond-section */
 .section-background-color{
@@ -157,6 +192,12 @@
     padding-top: 24px;
     color: black;
     font-size: 1.063rem;
+    opacity: 1;
+}
+
+.div-item:hover .text-on-image{
+    left: 195px;
+    opacity: 1;
 }
 .div-item:hover{
     width: 24rem;
@@ -202,6 +243,7 @@
     font-size: 25px;
     opacity: 0.7;
     font-family: 'IBM Plex Sans';
+    transition: all 0.50s ease-out; 
     
 }
 .text-for-device{
@@ -209,7 +251,7 @@
     font-size: 14px ;
     font-family: 'Open Sans';
     text-align: center;
-    opacity: 93%;
+    opacity: 0.5;
     transition: all 0.50s ease-out;
 
 }
@@ -252,13 +294,13 @@
     margin-top: 2px;
     background-color: var(--main-color);
     transform-origin:  right;  
-    transition: transform 0.45s ease-out;
+    transition: transform 0.55s ease-out;
   }
   
 .hover-underline-animation:hover::after {
     transform: scaleX(1);  
     transform-origin: bottom left;  
-  }
+}
 
 
 
