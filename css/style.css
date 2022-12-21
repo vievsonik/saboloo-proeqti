@@ -217,9 +217,14 @@
     display: inline-block;
     top: 0.5%;
     left: 1%;
-    /* right: 0%; */
-    
-
+} 
+.image-position2{
+    position: relative;
+    display: inline-block;
+    top: 0.5%;
+    left: 1%;
+    margin-top: 12px;
+    margin-bottom: 17px;
 } 
 .image-class{
     width: 21.438rem;
@@ -231,9 +236,8 @@
     transition: all 0.50s ease-out;
 
 }
-/* .image-class:hover{
-    width: 23.440rem;
-} */
+
+
 .text-on-image{
     position: absolute;
     color: #fff;
