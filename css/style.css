@@ -137,22 +137,32 @@
     background-color: var(--second-main-color) ;
     width: 21.875rem;
     height: 21.875rem;
-    border: var(--second-main-color) solid 3px;
-    border-radius:11px ;
-    border-bottom: #00b5ea;
+    border-radius:11px ;  
     transition: all 0.50s ease-out;
-
-
 }
 .div-item:hover .image-class {
-    width: 23.440rem;
+    width: 23.500rem;
 }
 .div-item:hover .more {
-    margin-top: 58px;
+    margin-top: 40px;
+    color: black;
+
+}
+.div-item:hover .more-a {
+    color: black;
+    
+}
+
+.div-item:hover .text-for-device {
+    padding-top: 24px;
+    color: black;
+    font-size: 1.063rem;
 }
 .div-item:hover{
     width: 24rem;
     height: 27rem;
+    /* background-color: hsl(0, 4%, 11%); */
+    background-color: #fff;
     
 }
 .div-block{
@@ -164,6 +174,10 @@
 .image-position{
     position: relative;
     display: inline-block;
+    top: 0.5%;
+    left: 1%;
+    /* right: 0%; */
+    
 
 } 
 .image-class{
@@ -196,6 +210,7 @@
     font-family: 'Open Sans';
     text-align: center;
     opacity: 93%;
+    transition: all 0.50s ease-out;
 
 }
 .info-class{
